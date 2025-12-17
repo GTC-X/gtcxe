@@ -1,0 +1,56 @@
+import { fetchAPI } from "../../components/utilities/fetch-api";
+import SingleBlog from "../../pages/SingleBlog";
+import { getCanonicalUrl } from "@/helpers/canonicalUrl";
+
+export async function generateMetadata({ params, searchParams }, parent) {
+  const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;
+  const path = `/blogs`;
+
+  // Define the 'locale' variable based on the condition
+  const locale = params?.locale;
+
+  const urlParamsObject = {
+    sort: { createdAt: "desc" },
+    populate: {
+      imageUrl: { populate: ["url"] },
+      category: { populate: "*" },
+      author: {
+        populate: "*",
+      },
+    },
+    locale: locale == "zh" ? "zh-Hans" : locale, // Use the defined 'locale' variable
+    filters: {
+      slug: decodeURIComponent(params?.slug),
+    },
+  };
+  const options = { headers: { Authorization: `Bearer ${token}` } };
+  const product = await fetchAPI(path, urlParamsObject, options);
+  const url = getCanonicalUrl(locale, `latest-news/${params?.slug}`);
+
+  return {
+    title: product?.data?.[0]?.attributes?.title,
+    description: product?.data?.[0]?.attributes?.short_descreption,
+    metadataBase: new URL("https://www.gtcfx.com"),
+    openGraph: {
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_STRAPI_API_URL}${product?.data?.[0]?.attributes?.imageUrl?.data?.attributes?.url}`, // Must be an absolute URL
+        },
+      ],
+      title: product?.data?.[0]?.attributes?.title,
+      description: product?.data?.[0]?.attributes?.short_descreption,
+      url: url,
+    },
+    alternates: {
+      canonical: url,
+    },
+  };
+}
+
+const Page = () => {
+  return <div>
+    <SingleBlog url="latest-news"/>
+  </div>
+};
+
+export default Page;

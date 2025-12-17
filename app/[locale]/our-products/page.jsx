@@ -1,0 +1,24 @@
+import { createTranslator } from "next-intl";
+import React from "react";
+import ProductDetailPage from "../pages/ProductDetails";
+import { getCanonicalUrl } from "@/helpers/canonicalUrl";
+
+export async function generateMetadata({ params: { locale } }) {
+    const messages = (await import(`../../../messages/${locale}.json`)).default;
+    const t = createTranslator({ locale, messages });
+    const url = getCanonicalUrl(locale, "our-products");
+  
+    return {
+      title: "Invest with the World’s Premier Online Trading Platform | GTCFX",
+      description: "“Enjoy competitive leverage and the lowest spreads. Trade over 27,000 instruments, including Forex, CFDs, shares, metals, energies, and equity indices, with fast and reliable execution.",
+      alternates: {
+        canonical: url,
+      },
+    };
+  }
+
+const page = ()=>{
+    return <ProductDetailPage/>
+} 
+
+export default page;
