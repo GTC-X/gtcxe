@@ -36,10 +36,7 @@ const TopBar = ({ currentLanguage, isAr, href }) => {
         {/* Contact Info */}
         <div className="content-top flex flex-row gap-2">
           <p className="text-[14px] font-[400] flex items-center gap-4 py-3">
-            <Link href="tel:+971800667788" className="flex items-center gap-2 hover:text-secondary text-sm">
-              <BsTelephoneFill /> +971 800 667788
-            </Link>
-            <span className="h-4 border-l border-white"></span>
+           
             <Link href="mailto:support@gtcxe.com" className="flex items-center gap-2 hover:text-secondary text-sm">
               <MdEmail /> support@gtcxe.com
             </Link>

@@ -3,21 +3,20 @@ export const dynamic = "force-dynamic";
 
 export async function GET() {
   const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.gtcfx.com";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.gtcxe.com";
 
   /* ------------------------------------------
      1. Static English URLs ONLY
   ------------------------------------------- */
   const staticPaths = [
-    "/", "/about-us", "/why-gtc-group", "/regulations", "/global-presence",
-    "/awards", "/company-news", "/careers", "/contact-us", "/free-demo-account",
+    "/", "/about-us", "/why-gtc-group", "/global-presence",
+    "/awards", "/contact-us", "/free-demo-account",
     "/deposit", "/account-types", "/forex", "/cfd-energy",
     "/precious-metals", "/commodities", "/indices",
     "/mt5-platform", "/mt4-platform", "/download-app", "/market-overview",
-    "/vps-hosting-services", "/autochartist", "/copy-trading",
-    "/introductory-broker", "/economic-calendar", "/glossary-faqs",
-    "/affiliate-program", "/liquidity-technology", "/restricted-countries",
-    "/technical-tools", "/client-agreement-MU", "/client-agreement-VU",
+    "/vps-hosting-services", "/copy-trading",
+    "/introductory-broker", "/economic-calendar", "/glossary-faqs", "/liquidity-technology",
+    "/client-agreement-MU", "/client-agreement-VU",
     "/liquidity-providers", "/pamm-account", "/mam-account", "/privacy-policy",
     "/withdrawal-policy", "/kyc-compliance-policy",
     "/deposit-and-refund-policy", "/customer-due-diligence-policy"

@@ -53,8 +53,8 @@ export default async function LocaleLayout({ children, params }) {
 
   /* ---------- SEO/Social variables (MUST exist before return) ---------- */
   const t = createTranslator({ locale, messages });
-  const siteName = "GTCFX";
-  const baseUrl = "https://www.gtcfx.com";
+  const siteName = "GTCXE";
+  const baseUrl = "https://www.gtcxe.com";
   
   // Get current pathname from headers (set by middleware)
   const headersList = headers();
@@ -103,7 +103,7 @@ export default async function LocaleLayout({ children, params }) {
     >
       <head>
         {/* Social meta tags */}
-        <meta name="author" content="GTCFX" />
+        <meta name="author" content="GTCXE" />
         <meta name="copyright" content="GTC Global SA (Pty) Ltd" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={siteName} />
@@ -127,88 +127,7 @@ export default async function LocaleLayout({ children, params }) {
         <link rel="alternate" hrefLang="x-default" href={cleanPath ? `${baseUrl}/${cleanPath}` : baseUrl} />
 
         <meta name="robots" content="index, follow" />
-        <meta
-          name="facebook-domain-verification"
-          content="60dqaxv53ub77e10r0xc6bmbl9y2b3"
-        />
 
-        {/* Scripts */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-10835048699" />
-        <Script
-          id="aw-gtag"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-10835048699');
-            `,
-          }}
-        />
-        <Script
-          id="finteza-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(a,e,f,g,b,c,d){a[b]||(a.FintezaCoreObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=!0,c.defer=!0,c.src=g,d&&d.parentNode&&d.parentNode.insertBefore(c,d))})
-              (window,document,"script","https://content.mql5.com/core.js","fz");
-              fz("register","website",{id:"dzwzfjftdagmxioapjzjratbyxemivrdqi",trackLinks:true,timeOnPage:true});
-            `,
-          }}
-        />
-        <Script
-          src="https://cloud.umami.is/script.js"
-          data-website-id="6e6d0916-5871-41f5-8ef5-1f89b83e611b"
-          defer
-        />
-        <Script
-          id="gtm-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer', "GTM-PSWH9QF");
-            `,
-          }}
-        />
-        <Script
-          id="aw-conv"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              function gtag_report_conversion(url) {
-                var callback = function () {
-                  if (typeof(url) != 'undefined') window.location = url;
-                };
-                gtag('event', 'conversion', {
-                  'send_to': 'AW-10835048699/LUb0CNmY5OsYEPvxxq4o',
-                  'event_callback': callback
-                });
-                return false;
-              }
-              document.addEventListener("wpcf7submit", function(){
-                gtag_report_conversion();
-              }, false);
-            `,
-          }}
-        />
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `
-              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSWH9QF"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
-            `,
-          }}
-        />
-        {/* Replace raw <script> with Next <Script> */}
-        <Script
-          defer
-          id="convrs-webchat"
-          src="https://webchat.conv.rs/0bc7dfc471ae1a9e19e6a0418f9b6fd3724bfbcf.js"
-        />
       </head>
 
       <body className="bg-white">

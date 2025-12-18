@@ -49,7 +49,7 @@ export default function HomePage() {
         <WhyGTC />
         <LiquiditySolutions />
         <TradingPlatform />
-        <SecurityFund />
+
         <Markets /> 
         <ClientsNetwork />
         <ClientPayments />

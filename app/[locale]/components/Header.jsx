@@ -177,16 +177,6 @@ const Header = ({currentLanguage}) => {
               locale: "en,ar,zh,zh-tw,it,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko,,ja,ms,ru,ps",
             },
             {
-              href: "/regulations",
-              label: t("about.firstcolumn.option3"),
-              locale: "en,ar,zh,zh-tw,it,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko,,ja,ms,ru,ps",
-            },
-           {
-              href: "/careers",
-              label: t("about.thirdcolumn.option2"),
-              locale: "en,ar,zh,zh-tw,it,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko,,ja,ms,ru,ps",
-            },
-            {
               href: "/contact-us",
               label: t("about.thirdcolumn.option3"),
               locale: "en,ar,zh,zh-tw,it,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko,,ja,ms,ru,ps",
@@ -206,28 +196,13 @@ const Header = ({currentLanguage}) => {
               href: "/awards",
               label: t("about.secondcolumn.option2"),
               locale: "en,ar,zh,zh-tw,it,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko,,ja,ms,ru,ps",
-            },
-            {
-              href: "/compensation-fund",
-              label: t("about.secondcolumn.option3"),
-              locale: "en,ar,zh,zh,ms,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko",
-            },
+            }
           ],
         },
         {
           icon: <MdOutlineWbSunny />,
           title: t("about.thirdcolumn.heading"),
           items: [
-             {
-              href: "/blogs",
-              label: t("about.thirdcolumn.option4"),
-              locale: "en,zh",
-            },
-            {
-              href: "/company-news",
-              label: t("about.thirdcolumn.option1"),
-              locale: "en,zh",
-            },
              {
               href: "/earnings-calendar",
               label: t("about.thirdcolumn.option5"),
@@ -356,11 +331,6 @@ const Header = ({currentLanguage}) => {
           items: [
          
             {
-              href: "/tutorial-videos",
-              label: t("account.secondcolumn.option2"),
-              locale: "en,ar,zh,zh,it,tr,fr,es,pt,ur,hi,vi,id,tl,th,ko,,ja,ms,ru,ps",
-            },
-            {
               href: "/glossary-faqs",
               label: t("trading.thirdcolumn.option4"),
               locale: "en,ar,zh,zh,it,tr,fr,es,pt,ur,hi,vi,id,tl,th,ko,,ja,ms,ru,ps",
@@ -374,12 +344,7 @@ const Header = ({currentLanguage}) => {
               href: "/swap-update",
               label: t("trading.thirdcolumn.option6"),
               locale: "en",
-            },
-             {
-              href: "/swap-free-trading",
-              label: t("trading.thirdcolumn.option7"),
-              locale: "en",
-            },
+            }
           ],
         },
       ],
@@ -399,16 +364,7 @@ const Header = ({currentLanguage}) => {
               locale: "en,ar,zh,zh-tw,it,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko,,ja,ms,ru,ps",
             },
           ],
-        },
-        {
-          items: [
-            {
-              href: "https://www.gtcaffiliates.com/",
-              label: t("partner.thirdcolumn.option1"),
-              locale: "en,ar,zh,zh-tw,it,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko,,ja,ms,ru,ps",
-            },
-          ],
-        },
+        }
       ],
     },
     {
@@ -451,22 +407,6 @@ const Header = ({currentLanguage}) => {
             {
               href: "/vps-hosting-services",
               label: t("technology.secondcolumn.option4"),
-              locale: "en,ar,zh,zh-tw,it,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko,,ja,ms,ru,ps",
-            },
-          ],
-        },
-        {
-          icon: <BiAnalyse />,
-          title: t("technology.thirdcolumn.heading"),
-          items: [
-            {
-              href: "/technical-tools",
-              label: t("technology.thirdcolumn.option1"),
-              locale: "en,ar,zh,zh-tw,it,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko,,ja,ms,ru,ps",
-            },
-            {
-              href: "/autochartist",
-              label: t("technology.thirdcolumn.option2"),
               locale: "en,ar,zh,zh-tw,it,tr,fr,es,pt,ur,hi,vi,id,fa,tl,th,ko,,ja,ms,ru,ps",
             },
           ],

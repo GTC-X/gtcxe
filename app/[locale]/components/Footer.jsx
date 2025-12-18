@@ -36,10 +36,6 @@ const Footer = () => {
           link: "/why-gtc-group",
         },
         {
-          name: t("link.menu2"),
-          link: "/regulations",
-        },
-        {
           name: t("link.menu5"),
           link: "/global-presence",
         },
@@ -52,21 +48,10 @@ const Footer = () => {
           name: t("link.menu10"),
           link: "/glossary-faqs",
         },
-        {
-          name: t("link.menu8"),
-          link: "/careers",
-        },
+       
         {
           name: t("link.menu9"),
           link: "/contact-us",
-        },
-        {
-          name: t("link.menu7"),
-          link: "/restricted-countries",
-        },
-        {
-          name: t("policy.menu8"),
-          link: "/company-news",
         },
       ],
     },
@@ -128,19 +113,6 @@ const Footer = () => {
           link: "/mam-account",
         },
         {
-          name: t("update.menu5"),
-          link: "/signal-centre-tool",
-        },
-        {
-          name: t("update.menu6"),
-          link: "/autochartist",
-        },
-
-        {
-          name: t("update.menu8"),
-          link: "/technical-tools",
-        },
-        {
           name: t("update.menu9"),
           link: "/vps-hosting-services",
         },
@@ -158,19 +130,9 @@ const Footer = () => {
       title: t("contact.label"),
       links: [
         {
-          text: t("contact.num"),
-          label: t("contact.menu1"),
-          icon: BsTelephoneFill,
-        },
-        {
           text: emailLink,
           label: t("contact.menu2"),
           icon: MdEmail,
-        },
-        {
-          text: "393526",
-          label: t("contact.menu3"),
-          icon: FaEnvelopeOpenText,
         },
         {
           text: "24/7",
@@ -246,64 +208,26 @@ const Footer = () => {
           </div>
         </div>
         <div className="container lg:flex justify-start items-center mt-8 pt-8 border-t border-y-cyan-50 border-opacity-40 px-2 ">
-          <div className="lg:basis-3/12 lg:flex flex-wrap items-center justify-center md:pr-10 pb-5">
+          <div className="lg:basis-3/12 lg:flex flex-wrap items-center justify-center md:pr-10">
            <Link href="/" locale="en" aria-label="GTCFX">
               <Image
-                src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/footer-logo.webp"
-                width={150}
-                height={53}
+                src="/GTCXE-footer.png"
+                width={250}
+                height={93}
                 alt="GTCFX official logo"
                 className="mx-auto md:m-0"
                 priority
               />
             </Link>
-            <SocialIcon />
-            <div className="flex flex-row py-5 justify-center">
-              <Image
-                src="/footer/iso9001_icon.png"
-                className="h-22 w-22"
-                width={80}
-                height={100}
-                alt="iso icon"
-              />
-              <Image
-                src="/footer/iso26000_icon.png"
-                className="h-22 w-22"
-                width={80}
-                height={100}
-                alt="iso icon"
-              />
-            </div>
-            <div className="relative w-full h-[150px]">
-                <Image src="/footer-map.png" fill alt="GTC Map" className="object-contain" />
-            </div>
+
+        
+        
           </div>
           <div className="lg:basis-9/12 text-xs text-white text-opacity-70 space-y-3 leading-5">
-            <p>
-              {/* <span className="text-secondary">{t("footerNotice.yellow")}</span> */}
-              {t("footerNotice.firstPara")}
-            </p>
-            <p>
-              <span className="text-secondary">
-                {t("footerNotice.gtc_group_heading1")}
-              </span>
-              {t("footerNotice.gtc_group_para1")}
-            </p>
+        
 
             <p>{t("footerNotice.gtc_multi_trading_para")}</p>
-            <p>
-              <span className="text-secondary">
-                {t("footerNotice.gtc_global_pty_heading")}
-              </span>
-              {t("footerNotice.gtc_global_pty_para")}
-            </p>
-          
-          
-           
-            <p>
-            
-              {t("footerNotice.eightPara")}{" "}
-            </p>
+         
          
           </div>
         </div>
