@@ -30,7 +30,7 @@ export default function LanguageMobile(props) {
     const flagMap = {
       "en": "/en.webp",
       "ar": "/ar.webp",
-      "fr": "/fr-FR.webp",
+      "fr": "/fa-IR.webp",
       "ru": "/ru_RU.webp",
     
     };
@@ -40,7 +40,7 @@ export default function LanguageMobile(props) {
   const languages = [
     { code: "en", label: "English", flagSrc: "/en.webp" },
     { code: "ar", label: "العربية", flagSrc: "/ar.webp" },
-    { code: "fr", label: "Français", flagSrc: "/fr-FR.webp" },
+    { code: "fa", label: "فارسی", flagSrc: "/fa-IR.webp" },
     { code: "ru", label: "Русский", flagSrc: "/ru_RU.webp" },
     
    

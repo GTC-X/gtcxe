@@ -115,12 +115,7 @@ const Footer = () => {
         {
           name: t("update.menu9"),
           link: "/vps-hosting-services",
-        },
-        {
-          name: t("update.menu10"),
-          link: "/legal-policies-client-agreements",
-        },
-      
+        }
       ],
     },
 
@@ -208,12 +203,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="container lg:flex justify-start items-center mt-8 pt-8 border-t border-y-cyan-50 border-opacity-40 px-2 ">
-          <div className="lg:basis-3/12 lg:flex flex-wrap items-center justify-center md:pr-10">
+          <div className="lg:basis-3/12 lg:flex flex-wrap items-center justify-center md:pr-10 pb-10 md:pb-0">
            <Link href="/" locale="en" aria-label="GTCFX">
               <Image
                 src="/GTCXE-footer.png"
-                width={250}
-                height={93}
+                width={200}
+                height={64}
                 alt="GTCFX official logo"
                 className="mx-auto md:m-0"
                 priority
