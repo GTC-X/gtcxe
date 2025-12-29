@@ -47,7 +47,7 @@ const Map = () => {
 
         <div className="relative w-full h-40 md:h-[650px]">
           <Image
-            src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/map-new.webp"
+            src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/social/world-map.svg"
             alt="map"
            fill
             className="object-contain"
